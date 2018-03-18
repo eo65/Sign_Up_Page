@@ -1,53 +1,63 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>BlackBox</title>
-
+	<title>OceanBox</title>
 	<style type="text/css">
+	
 		h1 {
 			text-align: center;
 			color: white;
 		}
 		
 		.page {
+			width: 50%;
+			height: 50px;
 			text-align: center;
-			border: 35% solid black;
-			width: 25%;
-			margin: auto;
+			margin: auto
 		}
 		
 		body {
-			background-color: black;
+			background: linear-gradient(to bottom, #003366 0%, #00ccff 100%);
 		}
 		
-		label, legend {
+		label, h2 {
 			color: white;
-		}		
-	</style>
-
-</head>
-
-<body>
-	<h1>BlackBox</h1>
+		}
 		
-	<div class="page">
-		<fieldset>
-			<legend><h2>Sign Up</h2></legend>
-			<label>First Name:<br />
+		form {
+			background: linear-gradient(to top, #66ffff 0%, #003399 100%); !important;
+			padding-bottom: 2em;
+			border: 5px solid white;
+			border-radius: 10px;
+		}
+		
+	</style>
+	
+	<h1>OceanBox</h1>
+</head>
+<body>
+	
+	<div class="page">	
+	
+		<form>
+			<!--<legend><h2>Sign Up</h2></legend> -->
+			<h2>Sign Up</h2>
+			<label>First Name<br />
 				<input type="text" name="first" /></label><br />
-			<label>Last Name:<br />
+			<label>Last Name<br />
 				<input type="text" name="last"></label><br />
-			<label>Email Address:<br />
+			<label>Email Address<br />
 				<input type="text" name="email" /></label><br />
-			<label>Phone Number:<br />
+			<label>Phone Number<br />
 				<input type="text" name="number"></label><br />
-			<label>Birthday:<br />
+			<label>Birthday<br />
 				<input type="text" name="birthday"></label><br />
-			<label>Gender:<br />
+			<label>Gender<br />
 				<input type="text" name="gender"></label><br /><br />
 			<input type="submit" value="Sign In">
-		</fieldset>
+		</form>
+		
 	</div>
-
+	<!--<p>&copy; </p> -->
 </body>
 </html>
